@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;  /* suaviza quando leva para o link especifico na mesma pagina*/
+  }
+
+  header {
+    background-color: rgba(100,149,237);
+    color: #fff;
+    font-family: arial;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+
+  }
+  @media(min-width: 280px) and (max-width: 450px){
+    header {
+       text-align: center;
+    
+      }
+  }
+
+  h3 {
+    font-size: 3rem;
+    font-family: arial;
+    margin: 0;
+    padding: 5px;
+  }
+  @media (min-width: 320px) and (max-width: 450px){
+    h3 {
+    font-size: 1.5rem;
+    font-family: arial;
+    margin: 0;
+    padding: 5px;
+  }
+  }
+
+  h4 {
+    font-size: 1.6rem;
+    font-family: arial;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+
+  body {
+    background-color: rgba(245, 245, 245)
+  }
+
+  .container {
+    background-color: #fff;
+    width: 70%;
+    box-shadow: 2px 2px 20px black;
+    margin: 0 auto;
+    max-width: 95%;
+    max-height: 95%;
+    min-height: 0%;
+    min-width: 0%;
+    margin-top: 30px;
+  }
+  @media(min-width: 320px) and (max-width: 450px){
+    .container {
+    background-color: #fff;
+    width: 95%;
+    box-shadow: 2px 2px 20px black;
+    margin: 0 auto;
+    max-width: 95%;
+    max-height: 95%;
+    min-height: 0%;
+    min-width: 0%;
+    margin-top: 6.5rem;
+  }
+  }
+
+  footer {
+    font-family: arial;
+    color: #fff;
+    background-color: rgba(100,149,237);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  p {
+    font-family: arial;
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-family: arial;
+    text-align: center;
+    padding-top: 10px;
+    /* padding - espaço do texto para o titulo */
+    font-size: 2.5rem;
+    /* rem - tamanho em pixel*/
+
+  }
+
+  h2 {
+    font-family: arial;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 2rem;
+
+  }
+
+  .texto-footer {
+    /* class - sempre começa com .*/
+    text-align: center;
+    font-family: arial;
+    padding-top: 10px;
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+  }
+
+  .compre {
+    background-color: rgba(255, 255, 0, 1);
+    width: 150px;
+    height: 100px;
+    position: fixed;
+    /*position: fixed;   item fica fixo enquanto rola a tela */
+    right: 0;
+    text-align: center;
+    margin-top: 18.5%;
+    /* separação do topo */
+    z-index: 1;
+    /* item sobrepoe todo o conteudo do site */
+  }
+
+  h5 {
+    font-family: arial;
+    text-align: center;
+    padding: 1px;
+    font-size: 2rem;
+  }
+
+  button {
+    font-family: arial;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1.9rem;
+    background-color: rgba(50, 205, 50, 1);
+    color: #fff;
+    border: solid #000;
+    /* borda visivel */
+  }
+
+  #grid-container {
+    margin-top: 40px;
+    background-color: lightgray;
+    padding: 5px;
+    
+  }
+
+  .grid {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;     /* fragemtação */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* auto-fill = quebra automatica coluna / minmax = resolução*/
+    grid-gap: 10px;
+    max-width: 1000px;
+    /* limite de largura da tela */
+    margin: 0 auto;
+    /* 0 = top e bottom, e auto para as laterias */
+
+  }
+
+  .grid div {
+    /* formatar a classe grid que esta dentro da div*/
+    background-color: #fff;
+    font-family: arial;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2px;
+    padding-bottom: 40px;
+    box-shadow: 0.2px, 0.2px #000;
+  }
+
+  #formulario {
+    background-color: rgba(0, 0, 139);
+    color: #fff;
+  }
+
+  .formulario-contato {
+    font-family: arial;
+    font-size: 1.8rem;
+    padding: 10px;
+    text-align: left;
+    margin-left: 5%;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px black;
+  }
+
+  input {
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    padding: 5px;
+
+
+  }
+
+  .dados-formulario {
+    width: 60%;
+  }
+
+  nav {
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 1.6rem;
+    margin-right: 2%;
+    word-spacing: 10px;
+  }
+  @media(min-width: 320px) and (max-width: 450px) {
+    nav {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: bold;
+        font-family: arial;
+        font-size: 1.6rem;
+        word-spacing: 15px;
+      }
+  }
+
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1.0);
+    transition: all 300ms ease-in-out;
+  }
+
+  a:hover {
+    background-color: rgba(169, 169, 169, 1.0);
+  }
+
+  #enviar {
+    background-color: rgba(0, 255, 127);
+    border-radius: 10%;
+    box-shadow: 3px 3px black;
+
+  }
+
+  #limpar {
+    background-color: rgba(178, 34, 34);
+    border-radius: 10%;
+    box-shadow: 3px 3px black;
+
+  }
+
+  .imagem-grid {
+    width: 18rem;
+    height: 10rem;
+    border-radius: 20px;
+  }
+
+  .texto-grid {
+    font-family: arial;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .link-grid {
+    font-weight: bold;
+    font-size: 1.8rem;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 5px;
+  }
+
+  #professor {
+    width: 150px;
+    height: 150px;
+    padding-left: 10px;
+    border-radius: 100%;
+  }
+
+  ul, li{
+    font-size: 1.6rem;
+    font-family: arial;
+    text-align: left;
+    margin-left: 30px;
+    padding-bottom: 10px;
+  }
+  .imagem-grid{
+    transition: 300ms ease-in-out;
+  }
+  img:hover{
+    transform: scale(1.3);   /*translate(2%, 2%)  rotate(2deg);   efeito nas imagens*/
+    border: solid blue;
+    box-shadow: 1px 1px 3px black;
+  }
+  #professor:hover{
+    transition: 300ms ease-in-out;
+  }
+  div.video{
+    position: relative;
+    padding-bottom: 50%;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;           /* centralizar*/
+   
+  }
+  div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+  }
+  p.curso-gratis{
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(12, 145, 12);
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.7rem;
+    font-family: arial;
+    border-radius: 30px;
+    border: solid  rgba(0,255,0, 0.55);
+    text-shadow: 2px 2px 5px black;
+  }
